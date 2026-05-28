@@ -15,14 +15,8 @@ public static class EndlessWaveGenerator
         {
             GameObject randomEnemy = ActionGameController.current.Enemys[Random.Range(0, ActionGameController.current.Enemys.Count)];
             Enemy randomEnemyData = randomEnemy.GetComponent<Enemy>();
-            Debug.Log(randomEnemy + " " + randomEnemyData);
-            Debug.Log(randomEnemyData.EndlessSpawnableOnWaveMoreThan + " " + wave);
-            Debug.Log(randomEnemyData.EndlessValue + " " + endlessValue);
-            Debug.Log(randomEnemyData.EndlessValue + " " + endlessValue);
-            Debug.Log(randomEnemyData.EndlessSpawnableOnWaveMoreThan >= wave);
-            Debug.Log(randomEnemyData.EndlessValue <= endlessValue);
-
-            if (randomEnemyData.EndlessSpawnableOnWaveMoreThan >= wave && randomEnemyData.EndlessValue <= endlessValue)
+           
+            if (randomEnemyData.EndlessSpawnableOnWaveMoreThan <= wave && randomEnemyData.EndlessValue <= endlessValue)
             {
                 Debug.Log(randomEnemyData.EndlessValue + " " + randomEnemy);
                 tempEnemys.Add(randomEnemy);

@@ -94,7 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   <SelectSFX>k__BackingField: {fileID: -8008401217624236582}
   <UseSFX>k__BackingField: {fileID: 8799341393034693661}
-  <Price>k__BackingField: 40
+  <Price>k__BackingField: 100
   <SellPrice>k__BackingField: 20
   <ItemName>k__BackingField: "\u0E04\u0E17\u0E32 T4"
   <Description>k__BackingField: "\u0E04\u0E17\u0E32\u0E43\u0E19\u0E15\u0E33\u0E19\u0E32\u0E19\u0E40\u0E27\u0E17\u0E41\u0E23\u0E07
