@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: Mathventure
-  defaultCursor: {fileID: 2800000, guid: a9483758c95e08f4fa96cf981dda5db3, type: 3}
+  defaultCursor: {fileID: 2800000, guid: 219582202e146f3418acb7dca46b0651, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1

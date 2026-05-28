@@ -76,7 +76,6 @@ public class ActionGameController : MonoBehaviour
         List<int> operatorOrders = CardPlayGameController.current.OperatorOrders;
 
         heroAttackQueue.Clear();
-        Debug.Log(operatorOrders.Count);
         for (int i = 0; i < operatorOrders.Count - 1; i++)
         {
             OperationEnum heroType =
@@ -108,16 +107,19 @@ public class ActionGameController : MonoBehaviour
                 right = rightCardData
             });
 
-            if (HeroToggler.current.IsBuffHeroOnThisLevel)
+            if (BuffHeroSlot.transform.GetChild(0) != null)
             {
+                
                 heroAttackQueue.Enqueue(new HeroAttackData
                 {
+
+                    
                     hero = BuffHeroSlot.transform.GetChild(0).GetComponent<Hero>(),
                     multiplier = multiplier,
                     operationEnum = heroType,
                     left = leftCardData,
                     right = rightCardData
-                });
+                });;
             }
         }
 
