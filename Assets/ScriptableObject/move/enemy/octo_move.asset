@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9df704bf0044914caf00bc147676f14, type: 3}
   m_Name: octo_move
   m_EditorClassIdentifier: Assembly-CSharp::Move
-  <Value>k__BackingField: 40
+  <Value>k__BackingField: 30
   <TargetType>k__BackingField: 1
   <MoveType>k__BackingField: 0
   <AnimationType>k__BackingField: 0

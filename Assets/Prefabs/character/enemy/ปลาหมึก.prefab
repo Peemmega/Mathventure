@@ -1435,7 +1435,7 @@ MonoBehaviour:
   targets: []
   <CoinOnKill>k__BackingField: 30
   <EndlessSpawnableOnWaveMoreThan>k__BackingField: 5
-  <EndlessValue>k__BackingField: 3
+  <EndlessValue>k__BackingField: 4
 --- !u!82 &4265046769025348497
 AudioSource:
   m_ObjectHideFlags: 0
