@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Cysharp.Threading.Tasks;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using TMPro;
@@ -94,25 +95,29 @@ public class EquipmentInventory : MonoBehaviour
         EquipmentSelectedItem = item;
     }
 
+    private float nextUseTime;
+
     public void ToggleEquipmentMenuPopup()
     {
+        if (Time.time < nextUseTime) return;
+        nextUseTime = Time.time + 0.3f;
+
         isActive = !isActive;
+
         if (uIController == null)
-        {
             return;
-        }
 
         if (GameController.current.GameState == Utils.GameState.Shop)
         {
-            uIController.OpenUI("inventory");
             uIController.CloseUI("heroEquipment");
+            uIController.OpenUI("inventory");
             return;
         }
+        Debug.Log(isActive);
         if (isActive)
         {
             uIController.OpenUI("inventory");
             uIController.OpenUI("heroEquipment");
-
         }
         else
         {

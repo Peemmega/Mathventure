@@ -78,9 +78,13 @@ public class CharacterSlotsHolder : MonoBehaviour
 
     public List<GameObject> GetLastCharacterAsList()
     {
-        return characters.Count >= 1
-        ? new List<GameObject> { characters[^1] }
-        : new List<GameObject>();
+        if (characters.Count == 0)
+            return new List<GameObject>();
+
+        int startIndex = Mathf.Max(0, characters.Count - 3);
+        int randomIndex = Random.Range(startIndex, characters.Count);
+
+        return new List<GameObject> { characters[randomIndex] };
     }
 
     public List<GameObject> GetAllCharactersAsList()

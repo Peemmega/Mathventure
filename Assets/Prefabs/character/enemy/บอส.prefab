@@ -1433,7 +1433,7 @@ MonoBehaviour:
   <CurrentMove>k__BackingField: {fileID: 11400000, guid: b2b503926b5b1424b8d97094648c89d8, type: 2}
   <FacingDirection>k__BackingField: {x: 0, y: 0}
   targets: []
-  <CoinOnKill>k__BackingField: 100
+  <CoinOnKill>k__BackingField: 150
   <EndlessSpawnableOnWaveMoreThan>k__BackingField: 15
   <EndlessValue>k__BackingField: 10
 --- !u!82 &4265046769025348497

@@ -107,13 +107,10 @@ public class ActionGameController : MonoBehaviour
                 right = rightCardData
             });
 
-            if (BuffHeroSlot.transform.GetChild(0) != null)
+            if (BuffHeroSlot != null && BuffHeroSlot.transform.GetChild(0) != null)
             {
-                
                 heroAttackQueue.Enqueue(new HeroAttackData
-                {
-
-                    
+                {  
                     hero = BuffHeroSlot.transform.GetChild(0).GetComponent<Hero>(),
                     multiplier = multiplier,
                     operationEnum = heroType,
